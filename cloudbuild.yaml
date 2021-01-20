@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/flowing-precept-281114/helm'
+  args: ['install', 'charts/products', '--generate-name']
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=europe-west2-c'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=k8scluster-2'
+tags: ['cloud-builders-community']
